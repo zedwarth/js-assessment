@@ -7,8 +7,7 @@ define(function() {
     },
 
     speak : function(fn, obj) {
-		obj.speak = fn;
-		return obj.speak();
+		return fn.apply(obj);
     },
 
     functionFunction : function(str) {
